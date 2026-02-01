@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mirza Sumaiya — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mirza Sumaiya Shakil Ahmed</h1>
+    <p>Bachelor of Engineering — AI & Data Science (2nd Year)</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#qualification">Qualification</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello, I am Mirza Sumaiya Shakil Ahmed. I am passionate about technology, creativity, and continuous learning. As an AI & Data Science student, I love exploring how data can solve real-world problems.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills & Technology</h2>
+    <div class="skills">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Graphic Designing" title="Graphic Designing">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+    </div>
+</section>
+
+<section id="qualification">
+    <h2>Qualification</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Details</th>
+                <th>Institute</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bachelor of Engineering — AI & DS</td>
+                <td>2024 – 2028</td>
+                <td>Specialization in AI & Data Science</td>
+                <td>Rizvi College of Engineering, Bandra</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary Education</td>
+                <td>2022 – 2024</td>
+                <td>Science Stream</td>
+                <td>Royal College, Mira Road</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    © 2025 Mirza Sumaiya Shakil Ahmed | Built with ❤️ and Code.
+</footer>
+
+</body>
+</html>
