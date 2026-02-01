@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer — Sumaiya Mirza</title>
+    <style>
+      /* Program based on Document Object Model to change the background color of the web page automatically after every 5 seconds 
+      Name: Mirza Sumaiya 
+      Branch: AI&DS*/
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            /* Smooth color transition effect */
+            transition: background-color 1s ease;
+            background-color: #87CEFA;
+        }
+
+        .center-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            backdrop-filter: blur(5px); /* Glassmorphism effect */
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-box">
+        <p>Sumaiya Mirza</p>
+        <p>Roll No: 241A014</p>
+        <p>Background changes every 5 seconds</p>
+    </div>
+
+    <script>
+        // Array of different hex colors
+        const colors = [
+            "#1E3A8A", "#2563EB", "#3B82F6",
+            "#60A5FA", "#93C5FD", "#1E40AF"
+        ];
+
+        let index = 0;
+
+        function changeBackground() {
+            // Document Object Model (DOM) to access body style
+            document.body.style.backgroundColor = colors[index];
+            
+            // Increment index and loop back using modulo (%)
+            index = (index + 1) % colors.length;
+        }
+
+        // Timer function: calls changeBackground every 5000 milliseconds (5 seconds)
+        setInterval(changeBackground, 5000);
+
+        // Initial call to set first color immediately
+        changeBackground();
+    </script>
+
+</body>
+</html>
