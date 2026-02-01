@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Crafters - Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">Street Crafters</h1>
+            <nav class="nav">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="artisans">Artisans</a>
+                <a href="#" class="nav-link cart-link" data-page="cart">
+                    Cart <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="homePage" class="page active">
+                <section class="hero">
+                    <h2>Discover Authentic Indian Crafts</h2>
+                    <p>Support local artisans and bring home stories woven with tradition</p>
+                </section>
+
+                <div class="controls">
+                    <div class="filter-group">
+                        <label for="categoryFilter">Filter by Category:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="Pottery">Pottery</option>
+                            <option value="Handloom Textiles">Handloom Textiles</option>
+                            <option value="Metal Art">Metal Art</option>
+                            <option value="Traditional Jewelry">Traditional Jewelry</option>
+                        </select>
+                    </div>
+
+                    <div class="sort-group">
+                        <label for="priceSort">Sort by Price:</label>
+                        <select id="priceSort">
+                            <option value="">Default</option>
+                            <option value="low">Low to High</option>
+                            <option value="high">High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+
+            <div id="artisansPage" class="page">
+                <h2 class="page-title">Our Artisans</h2>
+                <div class="artisans-grid" id="artisansGrid"></div>
+            </div>
+
+            <div id="cartPage" class="page">
+                <h2 class="page-title">Shopping Cart</h2>
+                <div id="cartContainer"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Street Crafters</h3>
+                    <p>Empowering Indian artisans, one craft at a time</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: hello@streetcrafters.in</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Instagram | Facebook | Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Street Crafters. Supporting Indian artisans.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="artisanModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="artisanDetails"></div>
+        </div>
+    </div>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="order-confirmation">
+                <h2>Thank You!</h2>
+                <p>Your order has been placed successfully.</p>
+                <p>Our artisans will start crafting your items with love and care.</p>
+                <button class="btn-primary" onclick="closeOrderModal()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
