@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validation - Sumaiya Mirza</title>
+    <style>
+        /* CSS Section*/
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #87CEEB, #00BFFF); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            width: 380px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #0077be;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            border: 2px solid #b0c4de;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            outline: none;
+        }
+        input[type="submit"] {
+            background: #00BFFF;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background: #0077be;
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .error { color: #e30b5c; }
+        .success { color: #0b6623; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Email Validation - Sumaiya Mirza</h2>
+        <form onsubmit="return validateEmail()">
+            <input type="text" id="email" placeholder="Enter your email" />
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        /* JavaScript Section: Logic for Experiment No. 6 */
+        function validateEmail() {
+            let email = document.getElementById("email").value;
+            let msg = document.getElementById("message");
+
+            // Check for presence of "@" and "." [cite: 4, 13, 51]
+            if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+                msg.textContent = "X Invalid Email! Must contain '@' and '.'"; [cite: 152]
+                msg.className = "error"; [cite: 153]
+                return false; [cite: 154]
+            } else {
+                msg.textContent = "✔ Valid Email! - Checked by Sumaiya Mirza"; [cite: 156-158]
+                msg.className = "success"; [cite: 159]
+                return false; [cite: 160]
+            }
+        }
+    </script>
+
+</body>
+</html>
