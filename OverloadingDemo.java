@@ -1,7 +1,6 @@
 /*
 Title: Constructor and Method Overloading
 Name: Mirza Sumaiya
-Team: Code Crafters
 Concept: Polymorphism in Java
 */
 class Student {
