@@ -1,7 +1,7 @@
 # Full-Stack-Development
 A collection of Full Stack Development projects, Java programs, React applications, and web development practice tasks created during my learning journey.
 
-###📂 Projects Included
+## 📂 Projects Included
 
 🛒 Handicraft E-Commerce Portal
 An online marketplace project for showcasing and selling handicraft products.
